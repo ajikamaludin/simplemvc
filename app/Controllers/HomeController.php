@@ -2,6 +2,11 @@
 
 class HomeController extends Controller{
 
+	protected $user;
+
+	public function __construct(){
+		$this->user = $this->model('User');
+	}
 	public function index(){
 		return $this->view('home', ['nama' => 'aji','umur' => '15']);
 	}
@@ -11,8 +16,9 @@ class HomeController extends Controller{
 	}
 
 	public function getuser(){
-		$model = $this->model('User')->index();
+		//$model = User::all();
 		//$model->index();
-		return $this->view('user', ['users' => $model]);
+		$userr = $this->user->all();
+		return $this->view('user', ['users' => $userr]);
 	}
 }

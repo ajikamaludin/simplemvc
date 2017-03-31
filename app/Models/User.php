@@ -1,7 +1,8 @@
 <?php
+use Illuminate\Database\Eloquent\Model as Eloquent;
 
-class User{
-	
+class User extends Eloquent{
+	/*Default Biasa
 	public function __construct(){
 		$this->db = Database::getInstance();
 	}
@@ -9,5 +10,6 @@ class User{
 	public function index(){
 		return $this->db->index('user');
 	}
+	*/
 
 }
