@@ -1,2 +1,4 @@
 # Simple MVC PHP Framework
-ini simple mvc php dari sekolahkoding.com
+
+belajar php dari sekolahkoding.com simple mvc php framework
+
